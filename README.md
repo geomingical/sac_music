@@ -97,16 +97,6 @@
 - `C0H9C0-2024-04-03.csv` — 可從 CODiS 查詢系統下載
 - `soundfonts/GeneralUser-GS.sf2` — 可從 [GitHub](https://github.com/mrbumpy409/GeneralUser-GS) 下載
 
-```bash
-# 安裝依賴（需要 conda seismo 環境）
-conda run -n seismo pip install obspy numpy scipy pretty_midi pyfluidsynth soundfile
-
-# 生成所有 5 種風格
-conda run -n seismo python3 seismic_music.py
-```
-
-輸出至 `output/` 資料夾（每種風格各一個 `.mid` 和 `.wav`）。
-
 ## 授權
 
 音樂輸出基於公開地球科學資料生成，可自由使用。原始地震資料受 [GEOFON 資料政策](https://geofon.gfz.de/waveform/archive/datapolicy.php) 約束。
